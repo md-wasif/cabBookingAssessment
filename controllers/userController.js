@@ -18,7 +18,7 @@ function getDistanceFromLatLngInKm(lat1, lon1, lat2, lon2) {
 let getdriverList = async (req, res) => {
 
   let user = req.user;
-  let getAllDriver = await driverSchema.find({});
+  let getAllDriver = await driverSchema.find({"available": true, "status": true});
   let data = [];
   if(getAllDriver.length > 0){
     getAllDriver = await Promise.all(getAllDriver.map(async (ele, i) => {
