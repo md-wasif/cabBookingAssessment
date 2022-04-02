@@ -1,0 +1,19 @@
+{
+  "name": "doosra_cabbooking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wasif",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.3",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.9",
+    "nodemon": "^2.0.15"
+  }
+}
